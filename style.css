@@ -82,6 +82,7 @@ header .c1{
     order: 2;
     flex: 1 1 0%;
     text-align: center;
+    z-index: 300;
 }
 
 header .c2{
@@ -115,6 +116,7 @@ header .c3{
 .c1 h2 {
     font-family: theZains;
     font-size: 28px;
+    z-index: 204;
 }
 
 #subscribe-icon {
@@ -357,7 +359,9 @@ nav.sticky {
     margin-right: 10px;    
 }
 
-
+#About {
+    min-height: 500px;
+}
 
 /*----------------------------
 ---------VIDEO SECTION--------
@@ -485,7 +489,7 @@ footer span{
 /*---Media Quieries---*/
 @media screen and (max-width: 600px) {
     body, html {
-        width: 500px
+        width: 500px;
     }
     
     .navbar {
@@ -493,9 +497,12 @@ footer span{
     }
     
     .c1 h2{
-        font-size: 10px;
+        font-size: 15px;
     }
     
+    .c3 h2, .c3 i{
+        font-size: 15px;
+    }
     sticky {
         
     }
