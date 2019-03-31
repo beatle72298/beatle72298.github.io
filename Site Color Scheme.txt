@@ -1,0 +1,7 @@
+Color Scheme:
+
+Color 1 (Darkest): 00334A
+Color 2: 004666
+Color 3: 1A607F
+Color 4: 007BB2
+Color 5 (Lightest): 4691B2
