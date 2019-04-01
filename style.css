@@ -407,7 +407,7 @@ nav.sticky {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 50; /* Sit on top */
+  z-index: 500; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -489,23 +489,45 @@ footer span{
 /*---Media Quieries---*/
 @media screen and (max-width: 600px) {
     body, html {
-        width: 500px;
+        width: 600px;
+    }
+    
+    #header-bar {
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav.sticky {
+       top: 80px; 
     }
     
     .navbar {
        display: block;
     }
     
+    .youtube-player {
+        height: 30vh;
+    }
+    .container {
+        max-width: 100%;
+    }
     .c1 h2{
+        font-size: 18px;
+    }
+    
+    .c3 h2{
         font-size: 15px;
     }
     
-    .c3 h2, .c3 i{
-        font-size: 15px;
+    #social-bar i{
+        font-size: 24px;
     }
-    sticky {
-        
+    
+    #social-bar {
+        position: relative;
+        left: 0;
     }
+    
 }
 
 
