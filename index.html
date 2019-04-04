@@ -14,9 +14,9 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="scripts.js"></script>
-        <script src="scripts2.js"></script>
-        <script src="rellax.min.js"></script>
-        <script src="lightbox.js"></script>
+<!--        <script src="scripts2.js"></script>-->
+<!--        <script src="rellax.min.js"></script>-->
+<!--        <script src="lightbox.js"></script>-->
     </head>
     
     <body>
@@ -85,16 +85,18 @@
             <!--End mc_embed_signup-->
                 </div>
             </div>
-        
-        
+    
+    <div class="site-wrapper">
+    <section id="top" data-anchor="top">    
     <!---Hero--->    
         <div id="hero">
             <div class="overlay"></div>
             <div class="layer-2 rellax" data-rellax-speed="5"></div>
             <h1>Joe Diliberto</h1>
         </div>
+    </section>
     
-    <div class="wrapper">    
+    <div class="wrapper">
         <header id="site-header" class="header-bar">
             <div class="header">
             <div id="header-bar" class="flex">
@@ -129,18 +131,18 @@
     <!---Navbar--->    
         <nav id="navbar" class="navbar">
             <ul class="flex">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#Music">Music</a></li>
-                <li><a href="#Live">Live</a></li>
-                <li><a href="#Video">Video</a></li>
-                <li><a href="#About">About</a></li>
+                <li><a href="#hero" data-scroll="top">Home</a></li>
+                <li><a href="#Music" data-scroll="music">Music</a></li>
+                <li><a href="#Live" data-scroll="live">Live</a></li>
+                <li><a href="#Video" data-scroll="video">Video</a></li>
+                <li><a href="#About" data-scroll"about">About</a></li>
             </ul>
         </nav>        
     </div>
         
        <main id="main-content" class=".overlay">
         <div class="container">
-            <section id="Music">
+            <section id="Music" data-anchor="music">
                 <h2>Music</h2>
                     <div id="album-grid" class="flex">
                         <div id="solaris-card" class="card">
@@ -420,7 +422,7 @@
         </div>
         
         <div id="about-section" class="container">
-            <section id="About">
+            <section id="About" data-anchor="about">
                 <h2>About</h2>
                  
                     <div class="profile-pic">
@@ -438,7 +440,7 @@
             
         </footer>
         
-        
+    </div>    
     </body>
     
     
