@@ -3,6 +3,8 @@
     <head>
         <title>Joe Diliberto | Official Site</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" type="image/png" href="images/favicon%20(1).ico">
         <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <link href="style.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
@@ -11,9 +13,8 @@
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="scripts.js"></script>
+<!--        <script src="/scripts/scripts.js"></script>-->
 <!--        <script src="scripts2.js"></script>-->
 <!--        <script src="rellax.min.js"></script>-->
 <!--        <script src="lightbox.js"></script>-->
@@ -96,7 +97,6 @@
         </div>
     </section>
     
-    <div class="wrapper">
         <header id="site-header" class="header-bar">
             <div class="header">
             <div id="header-bar" class="flex">
@@ -132,13 +132,12 @@
         <nav id="navbar" class="navbar">
             <ul class="flex">
                 <li><a href="#hero" data-scroll="top">Home</a></li>
-                <li><a href="#Music" data-scroll="music">Music</a></li>
-                <li><a href="#Live" data-scroll="live">Live</a></li>
-                <li><a href="#Video" data-scroll="video">Video</a></li>
-                <li><a href="#About" data-scroll"about">About</a></li>
+                <li><a href="#" data-scroll="music">Music</a></li>
+                <li><a href="#" data-scroll="live">Live</a></li>
+                <li><a href="#" data-scroll="video">Video</a></li>
+                <li><a href="#" data-scroll="about">About</a></li>
             </ul>
         </nav>        
-    </div>
         
        <main id="main-content" class=".overlay">
         <div class="container">
@@ -403,7 +402,7 @@
         
             
         <div id="live-section" class="container">
-            <section id="Live">
+            <section id="Live" data-anchor="live">
                 <h2>Live</h2>
                 <div class="bandsintown-widget">
                 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Joe Diliberto Music" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#1A607F" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-link-text-color="#FFFFFF" data-display-lineup="true" data-separator-color="rgba(124,124,124,0.25)"></a>
@@ -415,7 +414,7 @@
         
         
         <div class="container">
-            <section id="Video">
+            <section id="Video" data-anchor="video">
                 <h2>Video</h2>
                 <iframe class="youtube-player" src="https://www.youtube.com/embed/k7JKNOq-ADw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
@@ -434,15 +433,14 @@
             </section>
         </div>    
         </main>
-        
+    
         <footer>
             <span>&copy; Joe Diliberto 2019</span>
             
         </footer>
         
-    </div>    
+    </div>
     </body>
-    
-    
-    
+       
+    <script src="scripts/scripts.js"></script>
 </html>

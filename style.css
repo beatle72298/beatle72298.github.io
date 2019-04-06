@@ -60,7 +60,7 @@ i {
 
 
 #header-bar {
-    z-index: 200;
+    z-index: 202;
     min-height: 50px;
     padding: 1.5rem 2rem;
     position: fixed;
@@ -126,7 +126,6 @@ header .c3{
 /*---------------------------
 -----------Navbar------------
 ----------------------------*/
-
 nav ul{
     z-index: 201;
     margin: 0;
@@ -141,6 +140,7 @@ nav ul{
 nav li {
     margin:0;
     border-right: 1px solid #bbb;
+    transition: 0.5 all;
 }
 nav li:last-child{
     border-right: none;
@@ -150,36 +150,83 @@ nav li a{
     display: block;
     padding: 20px 28px;
     color: inherit;
+    transition: .2s all;
+    width: 100%;
+    height: 100%;
 }
 
-nav li:hover{
+nav a:hover{
     background-color: black;
+    transition: 0.3 all;
 }
 
+/*-------------------------
+------HEAD/NAV Dynamics---*/
 .sticky {
     position: fixed;
     z-index: 200;
 }
 
+nav {
+    transition: .2s linear all;
+}
+
 nav.sticky {
     top: 85px;
-    transition: .2s all;
+    width: 100%;
+    transition: .2s linear all;
 }
 
 .sticky + #main-content {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
-.changeColor {
+#main-content {
+    transition: .2s all;
+}
+
+
+.header-shrink {
+    z-index: 500;
+    transition: linear .3s all;
     background-color: #00334A;
-    width: 100%;
+    padding: 20px;
 }
 
-.shrink {
-    padding: 0;
+.header-shrink .c1 h2{
+    font-size: 22px;
+    transition: .3s all;
 }
+
+.header-shrink .c2 i{
+    font-size: 25px;
+    transition: .3s all;
+}
+
+.header-shrink .c3 h2{
+    font-size: 18px;
+    transition: .3s all;
+}
+
+.nav-shrink ul{
+    padding: 0;
+    
+}
+
+.nav-shrink > ul > li > a{
+    padding: 10px 25px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s all;
+}
+
 
 nav a.active {
+/*    background-color: black;*/
+}
+
+.active {
     background-color: black;
 }
 
@@ -235,17 +282,6 @@ nav a.active {
     to {opacity: 0.2}
 }
 
-
-.active {
-    background-color: slategrey;
-}
-
-.sticky {
-    position: fixed;
-    top:0;
-    width: 100%;   
-}
-
 .container {
     background-color: rgba(0, 70, 102, 0.7);
     max-width:75%;
@@ -275,6 +311,8 @@ nav a.active {
 
 #Music {
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 #solaris {
