@@ -26,7 +26,27 @@ $(document).ready(function(){
     $(window).scroll(function() {
         stickyNav();
 })
+
+    
+    //Down arrow scroll animation
+    var downArrowTop = $('.down-arrow').offset().top;
+    
+    var hideArrow = function(){
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop >= downArrowTop - 450){
+            $('.down-arrow a').animate({
+            opacity: 'hide'},400);
+        } else{
+            $('.down-arrow a').animate({
+            opacity: 'show'},400);
+        }
+    };
+    hideArrow();
+    $(window).scroll(function(){
+        hideArrow();
+    })
 })
+
 
 $('nav a').on('click', function() {
 
@@ -41,6 +61,18 @@ $('nav a').on('click', function() {
 
 })
 
+$('.down-arrow a').on('click', function() {
+
+    var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 200;
+
+    $('body,html').animate({
+        scrollTop: scrollPoint
+    }, 500);
+
+    return false;
+})
+
 
 $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
@@ -53,7 +85,6 @@ $(window).scroll(function() {
         });
 
             } else {
-                $('nav').removeClass('fixed');
                 $('nav a.active').removeClass('active');
                 $('nav a:first').addClass('active');
     }

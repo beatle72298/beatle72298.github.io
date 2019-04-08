@@ -266,6 +266,28 @@ nav a.active {
     animation-timing-function: ease-in-out;
 }
 
+/*
+.scene {
+    transform: translateY(var(--translateY));
+    will-change: transform;
+}
+*/
+
+.down-arrow {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    width: 100%;
+    z-index: 205;
+}
+
+.down-arrow i {
+    font-size: 56px;
+    color: #00334A;
+    opacity: .7;
+    text-shadow: 1px 5px 2px black;
+}
+
 #hero h1{
     z-index: 3;
     position: absolute;
@@ -288,6 +310,14 @@ nav a.active {
     padding: 40px;
     margin: 10vh auto;
     
+}
+
+
+
+/*----Body Rules---*/
+section h2 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 
@@ -314,6 +344,7 @@ nav a.active {
     height: 100%;
     width: 100%;
 }
+
 
 #solaris {
     background-image:url(images/AlbumArt_Solaris.png);
@@ -380,6 +411,19 @@ nav a.active {
     height: 50vh;
 }
 
+a.bit-button {
+    box-shadow: 5px 5px 5 black;
+    background-color: aliceblue;
+    
+}
+
+a.bit-button:hover {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 5px 10px black;
+    transition: .3s all;
+    
+}
 
 
 /*---------------------------
