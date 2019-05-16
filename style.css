@@ -577,8 +577,41 @@ footer span{
 }
 
 
+/*----Loader----*/
 
-/*---Media Quieries---*/
+.loader-bg {
+    z-index: 10000;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.loader {
+    z-index: 100000;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 47%;
+    background-color: black;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+
+
+
+/*----------------------------------------
+--------------Media Quieries---------------*/
 @media screen and (max-width: 600px) {
     body, html {
         width: 600px;

@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	// grab the initial top offset of the navigation 
         var stickyNavTop = $('.navbar').offset().top;
@@ -120,4 +119,10 @@ $(document).ready(function() {
         modal.style.display = 'none';
     }
     }
+});
+
+$(window).on('load', function() {
+    $('.loader').fadeOut();
+    $('.loader-bg').delay(350).fadeOut('slow');
+    $('body').delay(350).css({'overflow':'visible'});
 });
