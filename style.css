@@ -626,7 +626,7 @@ footer span{
     top: 40%;
     left: 47%;
     background-color: black;
-    box-shadow: 5px 5px 30px 8px #4691B2;
+    box-shadow: 5px 5px 30px #4691B2;
 }
 
 @keyframes spin {
