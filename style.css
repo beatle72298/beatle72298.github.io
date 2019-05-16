@@ -577,7 +577,9 @@ footer span{
 }
 
 
-/*----Loader----*/
+/*----------------------------------
+----------Loader Screen-------------
+-----------------------------------*/
 
 .loader-bg {
     z-index: 10000;
@@ -607,7 +609,13 @@ footer span{
     100% {transform: rotate(360deg)}
 }
 
-
+.loader-caption {
+    font-family: 'theZains';
+    font-size: 32px;
+    position: fixed;
+    top: 50%;
+    left: 47%;
+}
 
 
 /*----------------------------------------
