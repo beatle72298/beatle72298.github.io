@@ -482,12 +482,28 @@ a.bit-button:hover {
     margin: 0px;
 }
 
+.modal-logo {
+    font-family: theZains;
+    text-align: center;
+    font-size: 28px;
+    margin: 0 0;
+    position: relative;
+    left: 0;
+    top: 100px;
+    margin-bottom: 40px;
+    text-shadow: 5px 5px 10px black;
+}
+
 .artist-logo {
-    background-image: url(images/artistlogo.png);
+    background-image: url(images/ArtistLogo_NoText.png);
     background-size: cover;
     background-position: center center;
-    z-index: 55;
-    width: 500px;  
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 46%;
+    top: 20%;
+    margin: 0 0;  
 }
 
 #myBtn:hover,
@@ -546,7 +562,11 @@ a.bit-button:hover {
 
 .signup-caption p {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 20px;
+    font-size: 18px;
+    position: relative;
+    left: 0;
+    top: 62px;
+    margin-bottom: 40px;
 }
 
 div.clear {
@@ -559,7 +579,11 @@ div.clear {
     transform: scale(1.2);
     position: relative;
     margin-right: 5.5%;
-    margin-top: 2%;
+    margin-top: 2%;    
+}
+
+#mc-embedded-subscribe.button:hover {
+    background-color: black;
 }
 
 /*---------------------------------
@@ -602,7 +626,7 @@ footer span{
     top: 40%;
     left: 47%;
     background-color: black;
-    box-shadow: 5px 5px 8px #4691B2;
+    box-shadow: 5px 5px 30px 8px #4691B2;
 }
 
 @keyframes spin {
@@ -617,6 +641,7 @@ footer span{
     position: fixed;
     top: 25%;
     left: 46%;
+    text-shadow: 5px 5px 30px #4691B2;
 }
 
 
