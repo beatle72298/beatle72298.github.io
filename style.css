@@ -500,10 +500,11 @@ a.bit-button:hover {
     background-position: center center;
     height: 150px;
     width: 150px;
-    position: absolute;
-    left: 46%;
-    top: 20%;
-    margin: 0 0;  
+    position: relative;
+    left: 385px;
+    top: 100px;
+    text-align: center;
+    margin-top: 0px;
 }
 
 #myBtn:hover,
