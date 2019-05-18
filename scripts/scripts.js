@@ -63,7 +63,7 @@ $('nav a').on('click', function() {
 $('.down-arrow a').on('click', function() {
 
     var scrollAnchor = $(this).attr('data-scroll'),
-        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 200;
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 100;
 
     $('body,html').animate({
         scrollTop: scrollPoint
@@ -120,6 +120,8 @@ $(document).ready(function() {
     }
     }
 });
+
+/*--------LOADER SCREEN-------------*/
 
 $(window).on('load', function() {
     $('.loader').fadeOut();

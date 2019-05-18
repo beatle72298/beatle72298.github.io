@@ -281,11 +281,25 @@ nav a.active {
     z-index: 205;
 }
 
-.down-arrow i {
+
+i#down-arrow.fas.fa-angle-double-down {
+    display: block;
+    bottom: 0%;
+}
+
+.down-arrow i{
+    display: block;
     font-size: 56px;
     color: #00334A;
     opacity: .7;
     text-shadow: 1px 5px 2px black;
+    transition: 0.3s all;
+}
+
+i#down-arrow.fas.fa-angle-double-down:hover {
+    color: aliceblue;
+    text-shadow: 1px 5px 5px black;
+    transition: 0.3s all;
 }
 
 #hero h1{
@@ -411,16 +425,20 @@ section h2 {
     height: 50vh;
 }
 
+.bit-button {
+
+}
+
 a.bit-button {
-    box-shadow: 5px 5px 5 black;
+    box-shadow: 0px 5px 5px black;
     background-color: aliceblue;
-    
+    transition: .2s all;
+    fill: black;
 }
 
 a.bit-button:hover {
-    background-color: aliceblue;
-    color: black;
-    box-shadow: 0px 5px 10px black;
+    background-color: black;
+    box-shadow: 0px 2px 15px aliceblue;
     transition: .3s all;
     
 }
@@ -489,8 +507,8 @@ a.bit-button:hover {
     margin: 0 0;
     position: relative;
     left: 0;
-    top: 100px;
-    margin-bottom: 40px;
+    top: 0px;
+    margin-bottom: 30px;
     text-shadow: 5px 5px 10px black;
 }
 
@@ -501,10 +519,9 @@ a.bit-button:hover {
     height: 150px;
     width: 150px;
     position: relative;
-    left: 385px;
-    top: 100px;
+    left: 0px;
     text-align: center;
-    margin-top: 0px;
+    margin: 0 auto;
 }
 
 #myBtn:hover,
@@ -528,7 +545,7 @@ a.bit-button:hover {
 
 /* Modal Content/Box */
 .modal-content {
-  margin: 10% auto; /* 15% from the top and centered */
+  margin: 7% auto; /* 15% from the top and centered */
   border: 1px solid #888;
   background-color: #00334A;
   width: 50%; /* Could be more or less, depending on screen size */
@@ -566,8 +583,7 @@ a.bit-button:hover {
     font-size: 18px;
     position: relative;
     left: 0;
-    top: 62px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 div.clear {
