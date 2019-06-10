@@ -1,6 +1,18 @@
 /*-------------------------
 ------Universal Rules-------
 --------------------------*/
+:root {
+    --color1: #00334A;
+    --color2: #004666;
+    --color3: #1A607F;
+    --color4: #007BB2;
+    --color5: #4691B2;
+    --bg: #00334A;
+    --dark: #00334A;
+    --light: #4691B2;
+}
+
+
 @font-face {
     font-family: theZains;
     src: url(fonts/theZains.ttf);
@@ -425,8 +437,15 @@ section h2 {
     height: 50vh;
 }
 
-.bit-button {
-
+a.bit-button.bit-track-button.bit-offers {
+    margin-top: 40px;
+    box-shadow: 0px 2px 15px 1px black;
+    transition: .3s all;
+    background-color: aliceblue;
+    color: var(--color2);
+    font-size: 20px;
+    letter-spacing: 1px;
+    
 }
 
 a.bit-button {
@@ -436,8 +455,9 @@ a.bit-button {
     fill: black;
 }
 
-a.bit-button:hover {
+a.bit-button.bit-track-button.bit-offers:hover {
     background-color: black;
+    color: aliceblue;
     box-shadow: 0px 2px 15px aliceblue;
     transition: .3s all;
     
@@ -490,6 +510,33 @@ a.bit-button:hover {
     padding: 20px 0px;
     margin: 0 0;
     background-color: rgba(0, 51, 74, 0.5)}
+
+/*---------CONTACT SECTION------------------
+-------------------------------------------
+-------------------------------------------*/
+
+#Contact {
+    text-align: center;
+}
+
+.fas.fa-envelope {
+    margin-right: 15px;
+}
+
+.email a{
+    display: inline-flex;
+    font-size: 20px;
+    align-items: center;
+    transition: .3s all;
+}
+
+.email a:hover {
+    color: black;
+    text-shadow: 1px 5px 8px white;
+    transition: .3s all;
+}
+
+
 
 /*----------------------------------------
 ----------------LIGHTBOX------------------
@@ -579,7 +626,7 @@ a.bit-button:hover {
 }
 
 .signup-caption p {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     position: relative;
     left: 0;
@@ -593,14 +640,17 @@ div.clear {
 #mc-embedded-subscribe.button{
     background-color: #1A607F;
     font-family: 'Knewave', cursive;
-    transform: scale(1.2);
+    transform: scale(1.5);
     position: relative;
-    margin-right: 5.5%;
-    margin-top: 2%;    
+    margin-right: 40%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    box-shadow: 0px 2px 15px black;
 }
 
 #mc-embedded-subscribe.button:hover {
     background-color: black;
+    box-shadow: 0px 2px 15px aliceblue;
 }
 
 /*---------------------------------
