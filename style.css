@@ -464,16 +464,18 @@ section h2 {
 
 a.bit-button.bit-track-button.bit-offers {
     margin-top: 40px;
-    box-shadow: 3px 2px 15px 0px black;
+    box-shadow: 3px 2px 15px 1px black;
     transition: .3s all;
     background-color: aliceblue;
-    color: var(--color1);
+    color: black;
     font-size: 24px;
     letter-spacing: 2px;
     border-radius: 10px;
     font-family: 'Knewave';
     width: 150px;
     padding: 2px;
+    text-transform: none;
+    
 }
 
 a.bit-button {
@@ -488,7 +490,6 @@ a.bit-button.bit-track-button.bit-offers:hover {
     color: aliceblue;
     box-shadow: 3px 2px 15px aliceblue;
     transition: .3s all;
-    
 }
 
 #mce-responses {
