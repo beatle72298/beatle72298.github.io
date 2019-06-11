@@ -439,12 +439,13 @@ section h2 {
 
 a.bit-button.bit-track-button.bit-offers {
     margin-top: 40px;
-    box-shadow: 0px 2px 15px 1px black;
+    box-shadow: 3px 2px 15px 0px black;
     transition: .3s all;
     background-color: aliceblue;
-    color: var(--color2);
+    color: var(--color1);
     font-size: 20px;
     letter-spacing: 1px;
+    border-radius: 10px;
     
 }
 
@@ -458,7 +459,7 @@ a.bit-button {
 a.bit-button.bit-track-button.bit-offers:hover {
     background-color: black;
     color: aliceblue;
-    box-shadow: 0px 2px 15px aliceblue;
+    box-shadow: 3px 2px 15px aliceblue;
     transition: .3s all;
     
 }
