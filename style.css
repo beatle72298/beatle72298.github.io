@@ -338,7 +338,26 @@ i#down-arrow.fas.fa-angle-double-down:hover {
     
 }
 
+.loader-bg + #mc_embed_signup {
+    position: absolute;
+    z-index: 55;
+    top: 25%;
+    margin: 0px auto;
+    left: 37%;
+    width: 500px;
+    background-color: var(--color2);
+    overflow: hidden; 
+    
+}
 
+#mc-embedded-subscribe.button.b2 {
+    background-color: aliceblue;
+    color: black;
+}
+
+#mc-embedded-subscribe.button.b2:hover {
+    color: aliceblue;
+}
 
 /*----Body Rules---*/
 section h2 {
@@ -443,10 +462,12 @@ a.bit-button.bit-track-button.bit-offers {
     transition: .3s all;
     background-color: aliceblue;
     color: var(--color1);
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: 24px;
+    letter-spacing: 2px;
     border-radius: 10px;
-    
+    font-family: 'Knewave';
+    width: 150px;
+    padding: 2px;
 }
 
 a.bit-button {
@@ -715,9 +736,10 @@ footer span{
 
 /*----------------------------------------
 --------------Media Quieries---------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body, html {
-        width: 600px;
+        width: 700px;
+        overflow-x: hidden;
     }
     
     #header-bar {
@@ -756,6 +778,14 @@ footer span{
         left: 0;
     }
     
+    .down-arrow{
+        width: 700px;
+    }
+    
+    .loader-bg + #mc_embed_signup {
+        top: 15%;
+        left: 28vw;
+    }
 }
 
 
