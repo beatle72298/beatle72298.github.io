@@ -26,10 +26,9 @@ audio {
     box-sizing: border-box;
 }
 
-body, html{
+body{
     margin:0;
     padding: 0;
-    height:100vh;
     width:100%;
     background-color: #00334A;
     color: aliceblue;
@@ -141,6 +140,9 @@ header .c3{
 /*---------------------------
 -----------Navbar------------
 ----------------------------*/
+#navbar {
+    z-index: 219;
+}
 nav ul{
     z-index: 201;
     margin: 0;
@@ -681,7 +683,7 @@ a.bit-button.bit-track-button.bit-offers:hover {
 }
 
 .fas.fa-envelope {
-    margin-right: 15px;
+    margin-right: 5%;
 }
 
 .email a{
@@ -875,14 +877,16 @@ footer span{
 /*----------------------------------------
 --------------Media Quieries---------------*/
 @media screen and (max-width: 700px) {
-    body, html {
+    body {
         width: 100%;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
+        margin: 0 0;
     }
     
     #header-bar {
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px 0px;
+        width: 100%;
     }
     
     nav.sticky {
@@ -890,7 +894,7 @@ footer span{
     }
     
     .navbar {
-       display: block;
+        display: block;
     }
     
     .youtube-player {
@@ -917,13 +921,131 @@ footer span{
     }
     
     .down-arrow{
-        width: 700px;
+        width: 100%;
     }
     
     .hero-email {
-        width: 700px;
+        width: 100%;
     }
     
+    .site-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    .email a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .profile-pic {
+        width: 100%;
+    }
+    
+    .card {
+        width: 100%;
+    }
+    
+    .album-art {
+        width: 200px;
+        height: 200px;
+    }
+    
+    nav ul {
+        overflow: visible;
+    }
+    
+    #navbar {
+        width: 100%;
+    }
+    
+    .header-shrink .c1 h2{
+    font-size: 16px;
+    }
+
+    .c1 h2 {
+       margin-left: 10%; 
+    }
+    
+    .header-shrink .c3 h2{
+    font-size: 13px;
+    }
+    
+    .header-shrink .c3 i{
+        font-size: 5px;
+    }
+    
+    #navbar > ul > li a{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        font-size: 80%;
+    }
+    
+    .nav-shrink > ul > li > a{
+    padding: 10px 15px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s all;
+}
+    .nav-shrink > ul > li{
+    font-size:     
+    }
+    
+    #header-bar {
+        padding: 0px !important;
+    }
+    
+    div.c3 h2 i{
+        font-size: 18px !important;
+    }
+    
+        #social-bar > li {
+        margin: 7%;
+    }
+    
+    #social-bar {
+        margin-right: 10%;
+    }
+    .email i {
+        font-size: 100%;
+    }
+
+}
+@media screen and (max-width: 400px){
+    #navbar > ul > li a{
+        padding: 15px 8px;
+        font-size: 80%;
+    }
+    
+    #About p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .c1 > h2 > a{
+        font-size: 14px;
+    }
+    
+    #social-bar > li {
+        margin: 5%;
+    }
+    
+    .nav-shrink > ul > li > a {
+        padding: 10px 8px!important;
+    }
+}
+
+@media screen and (max-width: 335px){
+    #Contact ul{
+        text-align: left !important;
+        
+    }
+    #Contact ul li a{
+        font-size: 80%;
+    }
 }
 
 
